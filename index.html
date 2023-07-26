@@ -24,9 +24,9 @@
 <body class="lato-font">
     <header>
         <!-- nav section -->
-        <nav class="flex justify-around items-center max-w-screen-xl mx-auto mt-8 p-5">
-            <div class="navbar bg-base-100 md:bg-[#F85559] rounded-full px-12 py-4">
-                <div class="hidden md:block flex-1">
+        <nav class="flex justify-between items-center max-w-screen-xl mx-auto mt-8 p-5">
+            <div class="navbar bg-base-100 lg:bg-[#F85559] rounded-full px-12 py-4">
+                <div class="hidden lg:block flex-1 lg:text-white">
                     <ul class="flex gap-2">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -36,10 +36,10 @@
                 </div>
                 <div class="flex md:flex-1 gap-2">
                     <img src="./images/logo.png" alt="">
-                    <p class="md:text-white font-bold text-2xl md:text-4xl">Fruit Burst</p>
+                    <p class="lg:text-white font-bold text-base md:text-xl lg:text-2xl">Fruit Burst</p>
                 </div>
 
-                <div class="hidden md:block">
+                <div class="hidden lg:block">
                     <div class="relative ">
                         <div class="form-control flex-1 w-[400px]">
                             <input type="text" placeholder="Search here"
@@ -57,7 +57,9 @@
                     </div>
                 </div>
             </div>
-            <label class="md:hidden btn btn-circle swap swap-rotate">
+            
+            <div class="lg:hidden dropdown w-1/2">
+            <label class="lg:hidden btn btn-circle swap swap-rotate">
 
                 <!-- this hidden checkbox controls the state -->
                 <input type="checkbox" />
@@ -67,6 +69,7 @@
                     viewBox="0 0 512 512">
                     <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
                 </svg>
+                
 
                 <!-- close icon -->
                 <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -76,6 +79,22 @@
                 </svg>
 
             </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li class="border-2 rounded-full w-auto"><input type="search" placeholder="Search here" name="" id="">
+                    <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button></li>
+              </ul>
+            
+        </div>
         </nav>
         <!-- banner section -->
         <section>
@@ -562,7 +581,7 @@
             <p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of
                 classical <br> Latin literature from 45 BC, making it over 2000 years old.</p><br>
             <img class="mx-auto h-[300px] lg:absolute top-1/4 left-[600px]" src="./images/whychoose1.png" alt="">
-            <div class="flex flex-col lg:flex-row justify-between items-center ">
+            <div class="flex flex-col md:flex-row justify-between items-center p-2">
                 <div>
                     <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
                         <div><i class="fa-solid fa-users-between-lines fa-2xl"></i></div>
@@ -590,7 +609,7 @@
                             <p class="text-xs">Professional employees are there for you to pick<br> the most amazing and
                                 fresh fruits.</p>
                         </div>
-                    </div>
+                    </div><br>
                 </div>
 
 
